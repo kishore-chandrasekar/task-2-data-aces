@@ -54,7 +54,7 @@ function App() {
       {modalOpen && <Modal setOpenModal={setModalOpen} />}
       <div className='app__left'>
       {Object.keys(formErrors).length === 0 && isSubmit ? (
-        <div>Signed in successfully</div>
+        <div style={{color:"whitesmoke"}}>Signed in successfully</div>
       ) : (
         <pre>{JSON.stringify(formValues, undefined, 2)}</pre>
       )}
